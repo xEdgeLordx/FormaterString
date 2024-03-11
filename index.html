@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input
+    type="text"
+    oninput = "document.getElementById('output').innerText = SetupperCase(this.value)"
+    />
+    <div id="output">
+
+    </div>
+    <script>
+function SetupperCase(text){
+  let finaltext = text.charAt(0).toUpperCase() + text.slice(1);
+    return finaltext
+}
+
+
+    </script>
+</body>
+</html>
